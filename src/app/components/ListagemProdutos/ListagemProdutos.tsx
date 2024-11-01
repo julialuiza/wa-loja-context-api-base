@@ -13,8 +13,8 @@ export default function ListagemProdutos({
   setFavoritos,
 }: IListagemProdutos) {
   return (
-    <div className="row row-cols-1 row-cols-md-2">
-      <div className="col-md-9">
+    <div className="row row-cols-1 row-cols-lg-2">
+      <div className="col-lg-9">
         <h5 className="mb-3">Produtos disponíveis:</h5>
 
         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
@@ -29,7 +29,7 @@ export default function ListagemProdutos({
         </div>
       </div>
 
-      <div className="col-md-3">
+      <div className="col-lg-3">
         <ResumoFavoritos favoritos={favoritos} setFavoritos={setFavoritos} />
       </div>
     </div>

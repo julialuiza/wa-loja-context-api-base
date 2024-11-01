@@ -1,8 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 
 type Inputs = {
@@ -17,16 +15,7 @@ export default function FormLogin() {
     formState: { errors },
   } = useForm<Inputs>();
 
-  // const router = useRouter();
-  const [emailUsuario, setEmailUsuario] = useState("");
-
-  // useEffect(() => {
-  //   if (emailUsuario !== "") router.push("/");
-  // }, [emailUsuario, router]);
-
-  const onSubmit: SubmitHandler<Inputs> = (data) => {
-    // setEmailUsuario(data.email);
-  };
+  const onSubmit: SubmitHandler<Inputs> = (data) => {};
 
   return (
     <div className="col-12 col-md-8 d-flex justify-content-center align-items-center">

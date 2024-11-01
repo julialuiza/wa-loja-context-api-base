@@ -13,7 +13,7 @@ export default function ResumoFavoritos({
 
   return (
     <>
-      <h5 className="mb-3 ms-1">Últimos favoritados:</h5>
+      <h5 className="mb-3 mt-4 mt-lg-0 ms-1">Últimos favoritados:</h5>
 
       <div className="row row-cols-1 g-3 border rounded-1 pb-3 mt-3 bg-light ms-1">
         {ultimosFavoritos.length === 0 ? (
